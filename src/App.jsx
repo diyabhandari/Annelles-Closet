@@ -6,7 +6,7 @@ import logo from "./logo.svg"
 const App = () => {
   return (
     <div className="App">
-      <Counter></Counter>
+      <Quotes></Quotes>
     </div>
   )
 }
