@@ -8,7 +8,7 @@ const initialState = {
   status: "idle",
 }
 
-export const counterSlice = createAppSlice({
+export const productListSlice = createAppSlice({
   name: "counter",
 
   initialState,
@@ -42,9 +42,9 @@ export const counterSlice = createAppSlice({
   },
 })
 export const {increment} =
-  counterSlice.actions
+productListSlice.actions
 
-export const { selectCount, selectStatus } = counterSlice.selectors
+export const { selectCount, selectStatus } = productListSlice.selectors
 
-export default counterSlice.reducer
+export default productListSlice.reducer
 
