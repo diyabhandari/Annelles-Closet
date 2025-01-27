@@ -6,7 +6,7 @@ import { ProductList } from "./features/product-list/ProductList";
 const App = () => {
   return (
     <div className="App">
-      <ProductList></ProductList>
+      <Quotes></Quotes>
     </div>
   )
 }
