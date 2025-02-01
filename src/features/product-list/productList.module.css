@@ -49,7 +49,7 @@
   height: 200px;
   overflow: hidden;
   border-radius: 25px;
-  margin-top: 7px;
+  margin-top: 1px;
   margin-bottom: 12px;
 }
 .product-image{
@@ -61,5 +61,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  vertical-align: middle;
+  height: 40px;
 }
-
+.product-price {
+  display: grid;
+  place-items: center; /* Centers the text both vertically and horizontally */
+  line-height: 1; /* Match line-height to font size */
+  font-size: 16px; /* Set a specific font size */
+  padding: 0;
+}

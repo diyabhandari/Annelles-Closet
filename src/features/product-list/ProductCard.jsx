@@ -9,7 +9,10 @@ export const ProductCard = ({product}) => {
       <div className = {styles["product-details"]}>
         <div className = {styles["product-price"]}>{product.price}</div>
         <div className = {styles["add-to-cart"]}>
-          <i class="fa-solid fa-cart-shopping fa-lg"></i>
+        <span class="fa-stack">
+          <i class="fa-solid fa-circle fa-stack-2x"></i>
+          <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse"></i>
+        </span>               
         </div>
       </div>
     </div>
