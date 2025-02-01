@@ -1,14 +1,25 @@
 .general-product-list{
   display: flex;
   flex-direction: column;
+  color:#3b4774;
+  align-items: flex-start;
+  margin: 10px;
 }
+/*not exactly vertically aligned, look into it later*/
 .list-name{
-  background-color: #fefefe;
+  background-color: #FAF5F9;
+  border-style: solid;
   border-width: 3px;
   border-radius: 36px;
   border-color: #3b4774;
-  padding: 3px 40px;
-  width: 190px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+.list-name p{
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
 }
 .list-viewer{
   display: flex;
@@ -23,18 +34,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fefefe;
+  background-color: #FAF5F9;
   width: 250px;
   height: 300px;
   margin: 20px;
+  margin-left: 0;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: 3px;
+  border-color: #3b4774;
 }
-.product-image-container{
-  width: 200px;
+.product-image-container{ /*aspect ratio 3:4 why does it only work for 70 as a factor ? ratio should stay same*/
+  width: 170px;
   height: 200px;
   overflow: hidden;
+  border-radius: 25px;
+  margin-top: 7px;
+  margin-bottom: 12px;
 }
 .product-image{
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
+.product-details{
+  width: 66%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

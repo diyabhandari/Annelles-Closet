@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import { useDispatch, useSelector } from "react-redux"
-import styles from "./ProductList.module.css"
+import styles from "./productList.module.css"
 import {
   increment,
   incrementAsync,
@@ -48,7 +48,7 @@ export const ProductList = () => {
   return (
       <div className = {styles["general-product-list"]}>
         <div className = {styles["list-name"]}>
-          New Arrivals
+          <p>New Arrivals</p>
         </div>
         <div className = {styles["list-viewer"]}>
           <div className = {styles["left-scroll"]}></div> 
