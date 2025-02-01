@@ -1,8 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.borel-regular {
+  font-family: "Borel", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
+  font-family: "Borel";
+  font-weight: bold;
 }
 
 .App-logo {
@@ -43,20 +51,20 @@
 
 /*above is default setup code, below is my own*/
 body{
-  background-color: #fddff9;
+  background-color: #E8C8D8;
   background-image: repeating-linear-gradient(
         0deg,
         transparent,
         transparent 96px, /*100px edge of square, 4px weight of line*/
-        #efc5e9 96px, 
-        #efc5e9 100px
+        #D4B9CB 96px, 
+        #D4B9CB 100px
     ),
     repeating-linear-gradient(
         90deg,
         transparent,
         transparent 96px, 
-        #efc5e9 96px, 
-        #efc5e9 100px
+        #D4B9CB 96px, 
+        #D4B9CB 100px
     );
     
     background-size: 100px 100px; /*Grid cell size, tells the bg how to repeat the pattern*/
