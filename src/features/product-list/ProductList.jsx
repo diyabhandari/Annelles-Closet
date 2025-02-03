@@ -1,3 +1,4 @@
+//this file represents our products list page, so it should have the header too
 import { useState } from "react"
 
 import { useDispatch, useSelector } from "react-redux"
