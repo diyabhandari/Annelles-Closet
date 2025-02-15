@@ -3,7 +3,9 @@
   flex-direction: column;
   color:#3b4774;
   align-items: flex-start;
-  margin: 10px;
+  margin: auto;
+  margin-top: 20px;
+  width: 1400px;
 }
 /*not exactly vertically aligned, look into it later*/
 .list-name{
