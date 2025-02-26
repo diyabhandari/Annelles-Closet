@@ -16,7 +16,7 @@ export const Login = () =>{
             <div className = {styles["field-title"]}>password</div>
             <div className = {styles["forgot-password"]}>forgot password ?</div>
           </div>
-          <input type="password" className={styles["input-box"]} />
+          <input type="password" className={styles["input-box"]} required />
         </div>
       </div>
       <button className = {styles["sign-in-button"]}>sign in</button>

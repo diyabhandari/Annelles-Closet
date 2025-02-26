@@ -1,5 +1,6 @@
-export const Signup = () => {
+import { Signup } from "../features/auth/components/Signup"
+export const SignupPage = () => {
   return(
-    <div></div>
+    <Signup></Signup>
   )
 }
