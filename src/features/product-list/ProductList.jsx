@@ -63,4 +63,5 @@ export const ProductList = () => {
 
       </div>
   )
+  {/*make this more similar to all products page in canva design, later, and add pagination */}
 }

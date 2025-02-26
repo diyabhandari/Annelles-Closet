@@ -75,9 +75,9 @@
 }
 .cart-badge {
   position: absolute;
-  top: -5px; /* Adjust as needed */
-  right: -5px; /* Adjust as needed */
-  background-color: #FFC107; /* Change to desired color */
+  top: -5px; 
+  right: -5px; 
+  background-color: #FFC107; 
   padding-top: 6px;
   font-size: 12px;
   font-weight: bold;
