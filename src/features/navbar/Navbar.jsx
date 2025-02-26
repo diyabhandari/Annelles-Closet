@@ -13,44 +13,46 @@ const navigation = [
 
 export const Navbar = ({children}) => { //whatever component we pass as children, navbar will be applied to that
   return (
-    <div className = {styles["navbar"]}>
-      <div className = {styles["logo"]}>
-        <div className = {styles["logo-image-container"]}>
-          <img href = "/" src = "./image.png" className = {styles["logo-image"]} />
-        </div>
-      </div>
-      <div className = {styles["links"]}>
-        {navigation.map((item) => 
-          <div className = {styles["link-item"]}>
-            <a 
-              href = {item.href} 
-              aria-current = {item.current ? 'page':undefined}
-              className = {styles["link"]}
-            >
-              {item.name}
-            </a>
+    <div>
+      <div className = {styles["navbar"]}>
+        <div className = {styles["logo"]}>
+          <div className = {styles["logo-image-container"]}>
+            <img href = "/" src = "./image.png" className = {styles["logo-image"]} />
           </div>
-        )}
-      </div>
-      <div className = {styles["search-bar"]}>
-        <div className = {styles["search-icon"]}>
-          <i class="fas fa-search fa-s"></i>
         </div>
-        <div className = {styles["search-input"]}></div>
-      </div>
-      <div className= {styles["cart-icon"]}>
-      <span class="fa-stack">
-        <i class="fa-solid fa-circle fa-stack-2x"></i>
-        <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse"></i>
-      </span> 
+        <div className = {styles["links"]}>
+          {navigation.map((item) => 
+            <div className = {styles["link-item"]}>
+              <a 
+                href = {item.href} 
+                aria-current = {item.current ? 'page':undefined}
+                className = {styles["link"]}
+              >
+                {item.name}
+              </a>
+            </div>
+          )}
+        </div>
+        <div className = {styles["search-bar"]}>
+          <div className = {styles["search-icon"]}>
+            <i class="fas fa-search fa-s"></i>
+          </div>
+          <div className = {styles["search-input"]}></div>
+        </div>
+        <div className= {styles["cart-icon"]}>
+          <span class="fa-stack">
+            <i class="fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse"></i>
+          </span> 
+        </div>
       </div>
       <main>
           <div>
             {children}
           </div>
       </main>
-
     </div>
+    
   )
 }
 
