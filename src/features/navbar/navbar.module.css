@@ -1,4 +1,7 @@
 .navbar{
+  position: sticky;
+  top: 0;
+  overflow: hidden;
   width: 1400px;
   background-color: #FAF5F9;
   border-style: solid;

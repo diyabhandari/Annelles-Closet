@@ -1,4 +1,5 @@
 import styles from "./navbar.module.css"
+//referred to tailwind stacked layout as an example for this 
 
 //Home is opened when logo is clicked, its the default page that a user sees on opening the site
 //  { name: 'Home', href: '#', current: true },
@@ -10,7 +11,7 @@ const navigation = [
 ]
 
 
-export const Navbar = () => {
+export const Navbar = ({children}) => { //whatever component we pass as children, navbar will be applied to that
   return (
     <div className = {styles["navbar"]}>
       <div className = {styles["logo"]}>
@@ -43,6 +44,11 @@ export const Navbar = () => {
         <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse"></i>
       </span> 
       </div>
+      <main>
+          <div>
+            {children}
+          </div>
+      </main>
 
     </div>
   )
