@@ -1,0 +1,96 @@
+:global(body) { /*this is local scope, but for bg we want to override App.css' global scope*/
+  background-color: #E8C8D8 !important;
+  background-image: none !important;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #3b4774;
+  margin: auto;
+  position: absolute;  /* Ensures manual positioning */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Moves the element back by half its size */
+}
+.logo{
+  width: 150px;
+  height: 120px;
+  overflow: hidden;
+}
+.page-title{
+  font-size: 28px;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.email{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input-box{ /*fix caret alignment*/
+  background-color: #FAF5F9;
+  padding-left: 6px;
+  padding-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  caret-color: #3b4774;
+  height: 40px;
+  width: 380px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline: none; /*gets rid of default on focus behaviour of input*/
+}
+.password{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.password-field-titles{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; /*must set width for space between to work as required*/
+}
+.forgot-password{
+  color: #A53F5E;
+}
+.sign-in-button{
+  background-color: #3b4774;
+  color: #FAF5F9;
+  width: 380px; /*this same as input box*/
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 5px;
+  padding-top: 11px; /*padding i wanted + 1/4th of the text size ie 5+6*/
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.CTA{
+  display: flex;
+  flex-direction: row;
+}
+.red-text{
+  color:#A53F5E;
+  margin-left: 5px;
+}
+.input-box:focus{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #3b4774;
+}
+.sign-in-button:hover {
+  background-color: #2f3a5c;
+}
+
+.sign-in-button:active {
+  background-color: #252f4d;
+  transform: scale(0.97);
+  box-shadow: 0px 2px 5px rgba(59, 71, 116, 0.3);
+}
