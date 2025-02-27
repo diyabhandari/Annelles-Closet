@@ -1,4 +1,5 @@
 import styles from "../styles/Signup.module.css"
+import { Link } from "react-router-dom"
 export const Signup = () =>{
   return(
     <div className = {styles["container"]}>
@@ -28,7 +29,9 @@ export const Signup = () =>{
       {/*add email verification*/}
       <div className = {styles["CTA"]}>
         <p >already a member ?</p>
-        <p className = {styles["red-text"]}>sign in</p>
+        <p className = {styles["red-text"]}>
+          <Link to = "/login">sign in</Link>
+        </p>
       </div>
     </div>
   )

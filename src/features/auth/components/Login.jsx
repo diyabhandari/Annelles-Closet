@@ -1,4 +1,6 @@
 import styles from "../styles/Login.module.css"
+import { Link } from "react-router-dom"
+
 export const Login = () =>{
   return(
     <div className = {styles["container"]}>
@@ -22,7 +24,9 @@ export const Login = () =>{
       <button className = {styles["sign-in-button"]}>sign in</button>
       <div className = {styles["CTA"]}>
         <p >not a member ?</p>
-        <p className = {styles["red-text"]}>create an account</p>
+        <p className = {styles["red-text"]}>
+          <Link to = "/signup">create an account</Link>
+        </p>
       </div>
     </div>
   )
