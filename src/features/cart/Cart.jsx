@@ -1,6 +1,8 @@
 import styles from "./cart.module.css"
 import { CartItem } from "./CartItem"
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { FaArrowRightLong } from "react-icons/fa6";
 export const Cart = () => {
 
   useEffect(() => {
@@ -50,25 +52,32 @@ export const Cart = () => {
               <CartItem key = {product.id} product = {product}></CartItem>
             ))}
           </div>
-          <div className={styles["order-summary"]}>
-            <div className={styles["order-summary-title"]}>Order Summary</div>
-            <div className={styles["order-summary-field"]}>
-              <div className={styles["order-summary-field-name"]}>Subtotal</div>
-              <div className={styles["order-summary-field-price"]}>$70</div>
+          <div>
+            <div className={styles["order-summary"]}>
+              <div className={styles["order-summary-title"]}>Order Summary</div>
+              <div className={styles["order-summary-field"]}>
+                <div className={styles["order-summary-field-name"]}>Subtotal</div>
+                <div className={styles["order-summary-field-price"]}>$70</div>
+              </div>
+              <div className={styles["order-summary-field"]}>
+                <div className={styles["order-summary-field-name"]}>Shipping Estimate</div>
+                <div className={styles["order-summary-field-price"]}>$5</div>
+              </div>
+              <div className={styles["order-total-field"]}>
+                <div className={styles["order-total-name"]}>Order Total</div>
+                <div className={styles["order-total-price"]}>$75</div>
+              </div>
+              <button className={styles["checkout"]}>checkout</button>
             </div>
-            <div className={styles["order-summary-field"]}>
-              <div className={styles["order-summary-field-name"]}>Shipping Estimate</div>
-              <div className={styles["order-summary-field-price"]}>$5</div>
+            <div className={styles["continue"]}>
+              <div className={styles["continue-or"]}>or</div>
+              <Link to = "/">
+                <div className={styles["continue-link"]}>Continue shopping</div> 
+              </Link>
+              <div><FaArrowRightLong /></div>
             </div>
-            <div className={styles["order-total-field"]}>
-              <div className={styles["order-total-name"]}>Order Total</div>
-              <div className={styles["order-total-price"]}>$75</div>
-            </div>
-            <button className={styles["checkout"]}>checkout</button>
           </div>
-          
         </div>
-
     </div>
   )
 }

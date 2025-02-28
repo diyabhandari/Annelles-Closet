@@ -146,6 +146,19 @@
   margin-top: 30px;
   border-radius: 5px;
 }
+.continue{
+  display: flex;
+  flex-direction: row;
+  color:#3b4774;
+  margin-top: 20px;
+}
+.continue-or{
+  color: #252f4d;
+  margin-right: 3px;
+}
+.continue-link:hover{
+  text-decoration: underline;
+}
 .checkout:hover {
   background-color: #2f3a5c;
 }
