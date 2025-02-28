@@ -1,4 +1,5 @@
 import styles from "./navbar.module.css"
+import { Link } from "react-router-dom"
 //referred to tailwind stacked layout as an example for this 
 
 //Home is opened when logo is clicked, its the default page that a user sees on opening the site
@@ -39,14 +40,15 @@ export const Navbar = ({children}) => { //whatever component we pass as children
           </div>
           <div className = {styles["search-input"]}></div>
         </div>
-        <div className= {styles["cart-icon"]}>
-          <span class="fa-stack">
-            <i class="fa-solid fa-circle fa-stack-2x"></i>
-            <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse"></i>
-          </span>
-          <span className={styles["cart-badge"]}>3</span>
-        </div>
-   
+        <Link to="/cart">
+          <div className= {styles["cart-icon"]}>
+            <span class="fa-stack">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse"></i>
+            </span>
+            <span className={styles["cart-badge"]}>3</span>
+          </div>
+        </Link> 
       </div>
       <main>
           <div>
