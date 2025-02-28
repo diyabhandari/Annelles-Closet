@@ -6,6 +6,7 @@ import logo from "./logo.svg"
 import { Homepage } from "./pages/Homepage"
 import { LoginPage } from "./pages/LoginPage"
 import { SignupPage } from "./pages/SignupPage"
+import { Cart } from "./features/cart/Cart"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,9 +21,14 @@ const App = () => {
       path: "/login", 
       element: <LoginPage></LoginPage>, 
     },
+    
     {
       path: "/signup", 
       element: <SignupPage></SignupPage>, 
+    },
+    {
+      path: "/cart", 
+      element: <Cart></Cart>, 
     },
   ]);
   return (

@@ -1,4 +1,4 @@
-:global(body) { /*this is local scope, but for bg we want to override App.css' global scope*/
+.login-body {
   background-color: #E8C8D8 !important;
   background-image: none !important;
 }

@@ -1,7 +1,14 @@
 import styles from "../styles/Login.module.css"
 import { Link } from "react-router-dom"
-
+import { useEffect } from "react";
 export const Login = () =>{
+  useEffect(() => {
+    document.body.classList.add(styles["login-body"]);
+
+    return () => {
+      document.body.classList.remove(styles["login-body"]); // Remove when leaving login page
+    };
+    }, []);
   return(
     <div className = {styles["container"]}>
       <div className = {styles["logo"]}>
