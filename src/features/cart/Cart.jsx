@@ -67,7 +67,11 @@ export const Cart = () => {
                 <div className={styles["order-total-name"]}>Order Total</div>
                 <div className={styles["order-total-price"]}>$75</div>
               </div>
-              <button className={styles["checkout"]}>checkout</button>
+              <Link to="/checkout" className={styles["checkout-link"]}>
+                <button className={styles["checkout"]} type="button">
+                  Checkout
+                </button>
+              </Link>                   
             </div>
             <div className={styles["continue"]}>
               <div className={styles["continue-or"]}>or</div>

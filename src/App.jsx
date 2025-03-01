@@ -7,6 +7,7 @@ import { Homepage } from "./pages/Homepage"
 import { LoginPage } from "./pages/LoginPage"
 import { SignupPage } from "./pages/SignupPage"
 import { Cart } from "./features/cart/Cart"
+import { Checkout } from "./features/checkout/Checkout"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -29,6 +30,10 @@ const App = () => {
     {
       path: "/cart", 
       element: <Cart></Cart>, 
+    },
+    {
+      path: "/checkout", 
+      element: <Checkout></Checkout>, 
     },
   ]);
   return (
