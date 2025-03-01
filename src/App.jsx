@@ -6,12 +6,13 @@ import logo from "./logo.svg"
 import { Homepage } from "./pages/Homepage"
 import { LoginPage } from "./pages/LoginPage"
 import { SignupPage } from "./pages/SignupPage"
-import { Cart } from "./features/cart/Cart"
-import { Checkout } from "./features/checkout/Checkout"
+import { CartPage } from "./pages/CartPage"
+import { CheckoutPage } from "./pages/CheckoutPage"
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -29,11 +30,11 @@ const App = () => {
     },
     {
       path: "/cart", 
-      element: <Cart></Cart>, 
+      element: <CartPage></CartPage>, 
     },
     {
       path: "/checkout", 
-      element: <Checkout></Checkout>, 
+      element: <CheckoutPage></CheckoutPage>, 
     },
   ]);
   return (
