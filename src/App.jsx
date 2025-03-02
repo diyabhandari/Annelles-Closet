@@ -12,6 +12,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { Headline } from "./features/landing/components/Headline"
 
 const App = () => {
   const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const App = () => {
     {
       path: "/checkout", 
       element: <CheckoutPage></CheckoutPage>, 
+    },
+    {
+      path: "/testing", 
+      element: <Headline></Headline>, 
     },
   ]);
   return (
