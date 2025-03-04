@@ -3,9 +3,10 @@
   display: flex;
   align-items: center;
   color: #3b4774;
-  gap: 40px;
+  gap: 100px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .headline-container{
   display: flex;
@@ -73,9 +74,9 @@
 }
 .reviewer-handle {
   text-align: center;
-  position: relative; /* Ensure it has its own stacking context */
+  position: relative; 
   z-index: 10; /* Bring it above slider elements */
-  background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent bg */
+  background-color: rgba(255, 255, 255, 0.8); 
   width: fit-content;
   margin: auto; /*centers it*/
   margin-top: 40px;
@@ -84,7 +85,7 @@
 }
 .cta-button {
   position: absolute;
-  bottom: 10px; /* Position button at bottom of reviews container */
+  bottom: 10px; 
   padding-top: 8px;
   background-color: #3b4774;
   color: white;

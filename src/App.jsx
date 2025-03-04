@@ -37,10 +37,6 @@ const App = () => {
       path: "/checkout", 
       element: <CheckoutPage></CheckoutPage>, 
     },
-    {
-      path: "/testing", 
-      element: <Headline></Headline>, 
-    },
   ]);
   return (
     <div className="App">
