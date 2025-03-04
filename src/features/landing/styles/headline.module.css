@@ -1,0 +1,105 @@
+.container{
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  color: #3b4774;
+  gap: 40px;
+  margin: auto;
+  margin-top: 30px;
+}
+.headline-container{
+  display: flex;
+  flex-direction: column;
+  color: #3b4774;
+  width: 800px;
+  height: 350px;
+  background-color: #faf5f9;
+  padding: 30px;
+  padding-top: 50px; /*to ensure centering of the text*/
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3b4774;
+  border-radius: 12px;
+}
+.headline{
+  font-family: "Borel";
+  font-size: 60px;
+  font-weight: 200;
+}
+.headline-text{
+  font-family: Open Sans;
+  font-size: 28px;
+  font-weight: 200;
+}
+.reviews{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #faf5f9;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3b4774;
+  border-radius: 12px;
+  height: 350px;
+  width: 270px;
+  position: relative;
+}
+.reviews-carousel{
+  height: 225px;
+  width: 200px;
+}
+.review-slide{
+  height: 250px;
+  width: 200px;
+  object-fit: contain;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.review-image{
+  height: 180px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.review-image-itself{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 6px;
+  border-color: #aa97a4;
+  margin-bottom: 30px;;
+}
+.reviewer-handle {
+  text-align: center;
+  position: relative; /* Ensure it has its own stacking context */
+  z-index: 10; /* Bring it above slider elements */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent bg */
+  width: fit-content;
+  margin: auto; /*centers it*/
+  margin-top: 40px;
+  padding-top: 4px;
+  border-radius: 4px;
+}
+.cta-button {
+  position: absolute;
+  bottom: 10px; /* Position button at bottom of reviews container */
+  padding-top: 8px;
+  background-color: #3b4774;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 78%;
+  font-weight: 200;
+}
+.cta-button:hover {
+  background-color: #2f3a5c;
+}
+
+.cta-button:active {
+  background-color: #252f4d;
+  transform: scale(0.97);
+  box-shadow: 0px 2px 5px rgba(59, 71, 116, 0.3);
+}

@@ -39,7 +39,7 @@ export const Headline = () => {
       <div className = {styles["headline-container"]}>
         <div className = {styles["headline"]}>Sustainability, in Style</div>
         <div className = {styles["headline-text"]}>
-          With the profound goal of sustainability in mind, all of our picks are ethically sourced with a zero-waste methodology. We ensure that each piece is a way of furthering style and principle in truest sense
+          With the profound goal of sustainability in mind, all of our picks are ethically sourced with a zero-waste methodology. We ensure that each piece is a way of furthering style and principle in truest sense.
         </div>
       </div>
       <div className = {styles["reviews"]}>
@@ -49,7 +49,7 @@ export const Headline = () => {
             {reviews.map((review) => (
               <div key={review.id} className={styles['review-slide']}>
                 <div className={styles['review-image']}>
-                  <img src={review.image} alt={`Review by ${review.authorHandle}`} />
+                  <img src={review.image} alt={`Review by ${review.authorHandle}`} className={styles['review-image-itself']} />
                 </div>
                 <div className={styles['reviewer-handle']}>
                   <a href={review.handleHref} target="_blank" rel="noopener noreferrer">
