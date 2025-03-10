@@ -1,5 +1,7 @@
 import styles from "./navbar.module.css"
 import { Link } from "react-router-dom"
+import { BsHandbagFill } from "react-icons/bs";
+
 //referred to tailwind stacked layout as an example for this 
 
 //Home is opened when logo is clicked, its the default page that a user sees on opening the site
@@ -42,10 +44,7 @@ export const Navbar = ({children}) => { //whatever component we pass as children
         </div>
         <Link to="/cart">
           <div className= {styles["cart-icon"]}>
-            <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x" className={styles["cart-bg"]}></i>
-              <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse" className={styles["cart"]}></i>
-            </span>
+            <BsHandbagFill className= {styles["cart"]}/>
             <span className={styles["cart-badge"]}>3</span>
           </div>
         </Link> 
