@@ -19,11 +19,8 @@
   color: #FAF5F9;
   line-height: 18px; /* Match height of container */
   text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 
-
-
-
-  
 }
 
 .logo{
@@ -59,20 +56,34 @@
 .search-bar{
   border-style: solid;
   border-width: 3px;
-  border-color: #3b4774; 
   border-radius: 20px;
-  width: 250px;
+  width: 350px;
   height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #FAF5F9;
+  gap: 5px;
 }
 .search-icon{
   display: flex;
   align-items: center;
   margin-left: 4px;
   margin-right: 4px;
+  color:#3b4774;
+}
+.search-input{
+  border-radius: 20px;
+  background-color: #FAF5F9;
+  color: #3b4774;
+  outline: none;
+  width: 90%;
+  height: 100%;
+  padding-left: 5px; /*so that caret doesnt disappear into the rounded corners*/
+  padding-right: 5px;
+  font-size: 16px;
+  padding-top: 10px; /*to center borel text*/
 }
 .cart-icon{
   margin-right: 20px;
@@ -95,3 +106,8 @@
   align-items: center;
   justify-content: center;
 }
+.search-input:focus{
+  box-shadow: inset 0px 0px 15px rgba(101, 120, 187, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
+}
+

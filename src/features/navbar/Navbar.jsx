@@ -38,7 +38,7 @@ export const Navbar = ({children}) => { //whatever component we pass as children
           <div className = {styles["search-icon"]}>
             <i class="fas fa-search fa-s"></i>
           </div>
-          <div className = {styles["search-input"]}></div>
+          <input type = "text" placeholder="search annelle's closet" className = {styles["search-input"]} />
         </div>
         <Link to="/cart">
           <div className= {styles["cart-icon"]}>
