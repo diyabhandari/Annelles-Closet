@@ -43,8 +43,8 @@
   padding: 25px 20px;
   color: #3b4774;
   border: 3px solid #d4b9cb;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 200;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500 !important;
 }
 
 .shipping-policy-link {
@@ -93,7 +93,6 @@
 .form-label {
   font-size: 16px;
   color: #3b4774;
-  font-weight: 100;
   margin-bottom: 4px;
 }
 
@@ -103,7 +102,8 @@
   border: 2px solid #d4b9cb;
   border-radius: 6px;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500 !important;
   background-color: #fff;
   width: 300px;
 }
@@ -114,9 +114,10 @@
   border: 2px solid #d4b9cb;
   border-radius: 6px;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   background-color: #fff;
   width: 100%;
+  font-weight: 500 !important;
 }
 
 .form-input-long:disabled {
@@ -144,8 +145,8 @@
   padding: 25px 20px;
   color: #3b4774;
   border: 3px solid #d4b9cb;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 200;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500 !important;
   overflow-y: auto;
   max-height: 400px;
   transition: max-height 0.3s ease;
@@ -168,6 +169,8 @@
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500 !important;
 }
 
 .cart-item {
@@ -179,12 +182,10 @@
 
 .item-name {
   font-size: 16px;
-  font-weight: 100;
 }
 
 .item-price {
   font-size: 16px;
-  font-weight: 100;
 }
 
 .order-total-field {
@@ -193,16 +194,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-weight: 200;
   margin-top: 20px;
-}
-
-.order-total-name {
-  font-weight: 200;
-}
-
-.order-total-price {
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .proceed-button {

@@ -43,8 +43,8 @@ export const Navbar = ({children}) => { //whatever component we pass as children
         <Link to="/cart">
           <div className= {styles["cart-icon"]}>
             <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x"></i>
-              <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse"></i>
+              <i class="fa-solid fa-circle fa-stack-2x" className={styles["cart-bg"]}></i>
+              <i class="fa-solid fa-cart-shopping fa-stack-1x fa-inverse" className={styles["cart"]}></i>
             </span>
             <span className={styles["cart-badge"]}>3</span>
           </div>
