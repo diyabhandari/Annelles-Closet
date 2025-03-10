@@ -28,9 +28,9 @@
   font-weight: 200;
 }
 .headline-text{
-  font-family: Open Sans;
+  font-family: "Quicksand", sans-serif;
   font-size: 28px;
-  font-weight: 200;
+  font-weight: 400;
 }
 .reviews{
   display: flex;
