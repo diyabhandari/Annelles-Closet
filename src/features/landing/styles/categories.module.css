@@ -1,0 +1,15 @@
+/*for each card*/
+.category-card-container{
+  height: 280px;
+  width: 300px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3b4774;
+  border-radius: 25px;
+}
+.category-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

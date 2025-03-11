@@ -12,7 +12,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { Headline } from "./features/landing/components/Headline"
+import { FeaturedCategories } from "./features/landing/components/FeaturedCategories"
 
 const App = () => {
   const router = createBrowserRouter([
@@ -36,6 +36,10 @@ const App = () => {
     {
       path: "/checkout", 
       element: <CheckoutPage></CheckoutPage>, 
+    },
+    {
+      path: "/testing", 
+      element: <FeaturedCategories></FeaturedCategories>, 
     },
   ]);
   return (
