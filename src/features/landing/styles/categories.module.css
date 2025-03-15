@@ -1,11 +1,11 @@
 .category-list-container{
   margin: auto;
-  width: 1200px;
+  width: 1400px;
 }
 .category-list{
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 40px;
 }
 .category-list-title{
   background-color: #FAF5F9;
